@@ -100,7 +100,7 @@ asm
 
 @@go: push esi
 
-  lea esi, Buffer+Size+1
+  lea esi, Buffer+Size
   mov eax, -1  // = not 0
   neg Size; jge @done
   mov ecx, edx // ecx now Counter!
